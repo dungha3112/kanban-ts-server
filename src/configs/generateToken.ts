@@ -30,8 +30,6 @@ export const generateRefreshToken = (payload: object, res: Response) => {
     httpOnly: true,
     path: "/api/v1/auth/refresh_token",
     maxAge: 30 * 24 * 60 * 60 * 1000,
-    secure: true,
-    sameSite: "none",
   });
 
   return refresh_token;

@@ -12,7 +12,10 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
-  cors({ origin: "https://kanban-client-khaki.vercel.app", credentials: true })
+  cors({
+    origin: ["https://kanban-client-khaki.vercel.app", "http://localhost:3000"],
+    credentials: true,
+  })
 );
 app.use(cookieParser());
 
