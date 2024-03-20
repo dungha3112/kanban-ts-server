@@ -8,6 +8,16 @@
   ],
   "routes": [
     {
+      "src": "/api/v1/*",
+      "methods": ["GET", "POST", "PUT", "DELETE"],
+      "headers": "*",
+      "allowCredentials": true,
+      "allowOrigin": [
+        "https://kanban-client-khaki.vercel.app",
+        "http://localhost:3000"
+      ]
+    },
+    {
       "src": "/(.*)",
       "dest": "src/server.ts"
     }
