@@ -13,7 +13,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: "https://kanban-client-khaki.vercel.app",
+    origin: [
+      "https://kanban-client-khaki.vercel.app",
+      "https://kanban-client-khaki.vercel.app/",
+      "http://localhost:3000",
+      "http://localhost:3000/",
+    ],
     credentials: true,
   })
 );
