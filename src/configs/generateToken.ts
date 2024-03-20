@@ -28,7 +28,6 @@ export const generateRefreshToken = (payload: object, res: Response) => {
   );
   res.cookie("refreshToken", refresh_token, {
     httpOnly: true,
-    domain: "https://kanban-ts-server.vercel.app",
     path: "/api/v1/auth/refresh_token",
     maxAge: 30 * 24 * 60 * 60 * 1000,
     secure: true,
