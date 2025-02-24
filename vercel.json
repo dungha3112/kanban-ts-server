@@ -18,7 +18,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "dist/server.js"
+      "dest": "bin/server.js"
     }
   ],
   "buildCommand": "tsc"
