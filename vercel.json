@@ -18,8 +18,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "bin/server.js"
+      "dest": "src/server.ts"
     }
-  ],
-  "buildCommand": "tsc"
+  ]
 }
